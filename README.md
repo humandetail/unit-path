@@ -5,7 +5,7 @@
 ## 安装
 
 ```shell
-# npm i unit-path
+# npm i -S unit-path
 ```
 
 ## 使用
