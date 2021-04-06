@@ -5,22 +5,17 @@ export interface IPoint {
   y: number;
 };
 
-export interface ICalculator {
-  (t: number): IPoint;
-}
+export type ICalculator = (t: number) => IPoint;
 
 export default class UnitPath {
   private _calculator: ICalculator | null = null;
-  constructor () {}
 
   /**
    * 设置路径
-   * @param {*} type 
-   * @param  {...any} args 
+   * @param { CURVE_TYPE } type - 路径类型
+   * @param { ...any } args - 参数
    */
-  setPath (type: CURVE_TYPE, startPoint: IPoint, endPoint: IPoint): UnitPath;
-  setPath (type: CURVE_TYPE, startPoint: IPoint, controlPoint: IPoint, endPoint: IPoint): UnitPath;
-  setPath (type: CURVE_TYPE, startPoint: IPoint, controlPoint1: IPoint, controlPoint2: IPoint, endPoint: IPoint): UnitPath;
+  setPath (type: CURVE_TYPE, startPoint: IPoint, controlPoint1: IPoint, controlPoint2?: IPoint, endPoint?: IPoint): UnitPath;
   setPath (type: CURVE_TYPE, x: number, y: number, r: number, startAngle: number, endAngle: number, anticlockwise?: boolean): UnitPath;
   setPath (type: CURVE_TYPE, ...args: any[]): UnitPath {
     switch (type) {
