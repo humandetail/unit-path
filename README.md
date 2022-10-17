@@ -7,9 +7,6 @@
   <a href="https://www.npmjs.com/package/unit-path">
     <img src="https://img.shields.io/npm/v/unit-path.svg" />
   </a>
-  <a href="https://github.com/humandetail/unit-path/actions/workflows/page.ci.yml">
-    <img src="https://github.com/humandetail/unit-path/actions/workflows/page.ci.yml/badge.svg?branch=main" />
-  </a>
   <a href="https://github.com/humandetail/unit-path">
     <img src="https://img.shields.io/github/license/humandetail/unit-path.svg" />
   </a>
