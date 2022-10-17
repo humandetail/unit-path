@@ -3,7 +3,7 @@ env:
   es2021: true
   node: true
 extends:
-  - airbnb-base
+  - standard-with-typescript
 parser: '@typescript-eslint/parser'
 parserOptions:
   ecmaVersion: latest
@@ -13,6 +13,7 @@ plugins:
   - '@typescript-eslint'
 rules: {
   '@typescript-eslint/strict-boolean-expressions': 0,
+  '@typescript-eslint/restrict-template-expressions': 0,
   'import/no-extraneous-dependencies': 0,
   'import/no-unresolved': 0,
   'import/extensions': 0
