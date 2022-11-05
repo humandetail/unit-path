@@ -1,4 +1,5 @@
-import { defineConfig } from 'vitest/config';
+import { defineConfig } from 'vitest/config'
+import dts from 'vite-plugin-dts'
 
 export default defineConfig({
   test: {},
@@ -8,7 +9,11 @@ export default defineConfig({
       entry: './src/index.ts',
       name: 'UnitPath',
       fileName: 'unit-path',
-      formats: ['es', 'cjs', 'iife'],
-    },
+      formats: ['es', 'cjs', 'iife']
+    }
   },
-});
+
+  plugins: [
+    dts()
+  ]
+})

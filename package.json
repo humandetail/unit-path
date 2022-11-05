@@ -1,7 +1,7 @@
 {
   "name": "unit-path",
   "private": false,
-  "version": "0.0.3",
+  "version": "0.0.4",
   "author": "humandetail",
   "keywords": [
     "unitPath",
@@ -18,7 +18,7 @@
   "brower": "dist/unit-path.iife.js",
   "module": "dist/unit-path.js",
   "files": ["dist/*"],
-  "types": "src/index.ts",
+  "types": "dist/index.d.ts",
   "exports": {
     ".": {
       "import": "./dist/unit-path.js"
@@ -63,6 +63,7 @@
     "lint-staged": "^13.0.3",
     "typescript": "^4.6.4",
     "vite": "^3.1.0",
+    "vite-plugin-dts": "^1.6.1",
     "vitest": "^0.24.3"
   },
   "lint-staged": {
