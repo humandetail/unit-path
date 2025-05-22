@@ -19,8 +19,8 @@
   "include": [
     "src/**/*",
     "test/**/*",
-    "example/**/*",
-    "vite.config.ts"
+    "vite.config.ts",
+    "types/**/*"
   ],
   "exclude": ["node_modules"]
 }

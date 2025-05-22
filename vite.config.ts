@@ -14,6 +14,8 @@ export default defineConfig({
   },
 
   plugins: [
-    dts()
+    dts({
+      include: ['src']
+    })
   ]
 })
