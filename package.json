@@ -1,7 +1,7 @@
 {
   "name": "unit-path",
   "private": false,
-  "version": "0.0.5",
+  "version": "0.0.6",
   "author": "humandetail",
   "keywords": [
     "unitPath",
@@ -21,7 +21,9 @@
   "types": "dist/index.d.ts",
   "exports": {
     ".": {
-      "import": "./dist/unit-path.js"
+      "import": "./dist/unit-path.js",
+      "require": "./dist/unit-path.cjs",
+      "types": "./dist/index.d.ts"
     }
   },
   "unpkg": "dist/unit-path.js",
@@ -37,7 +39,7 @@
   },
   "scripts": {
     "dev": "vite",
-    "build": "tsc && vite build && cp README.md LICENSE package.json dist/",
+    "build": "tsc && vite build",
     "preview": "vite preview",
     "prepare": "husky install",
     "test": "vitest run",
